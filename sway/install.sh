@@ -14,6 +14,9 @@ find_command i3blocks
 
 # Commands for key bindings
 
+find_command bemenu
+find_command j4-dmenu-desktop
+
 find_command dunst
 find_command pactl
 
@@ -42,6 +45,7 @@ find_command dex
 
 find_command cc
 find_command tmux
+find_command alacritty
 
 cc -o ./config/scripts/terminal ./config/scripts/terminal.c
 
