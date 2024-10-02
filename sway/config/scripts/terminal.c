@@ -57,7 +57,7 @@ bool execute_shell_command(char* command, char *const envp[])
     return true;
 }
 
-int main(int argc, const char** argv, char* const envp[])
+int main(int argc, const char** argv, char** const envp)
 {
     (void) argc;
     (void) argv;
