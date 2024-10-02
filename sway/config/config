@@ -152,7 +152,7 @@ bar {
 
     status_command i3blocks
 
-    font pango:Iosevka 8.7
+    font pango:monospace 8.7
     height 23
 }
 
