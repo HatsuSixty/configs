@@ -27,8 +27,6 @@ font pango:monospace 8.4
 titlebar_padding 2
 titlebar_border_thickness 1
 
-gaps inner 10
-
 ### Window rules
 for_window [app_id="org.kde.polkit-kde-authentication-agent-1"] floating enable
 
