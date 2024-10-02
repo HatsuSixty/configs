@@ -44,4 +44,4 @@ cc -o ./config/scripts/terminal ./config/scripts/terminal.c
 # Install sway config
 #
 
-link_path "$(pwd)/config" "${HOME}/.config/emacs"
+link_path "$(pwd)/config" "${HOME}/.config/sway"
