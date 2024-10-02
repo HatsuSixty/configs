@@ -7,5 +7,6 @@ set -e
 echo "Installing configs..."
 
 install_config "./emacs"
-# install_config "./sway"
+install_config "./sway"
 install_config "./shell"
+install_config "./alacritty"
