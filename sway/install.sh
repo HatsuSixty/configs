@@ -36,6 +36,7 @@ find_command dex
 #
 
 find_command cc
+find_command tmux
 
 cc -o ./config/scripts/terminal ./config/scripts/terminal.c
 
