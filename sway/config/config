@@ -31,10 +31,14 @@ titlebar_border_thickness 1
 for_window [app_id="org.kde.polkit-kde-authentication-agent-1"] floating enable
 
 ### Input configuration
-input "type:keyboard"   {
+input "type:keyboard" {
     xkb_layout br
     xkb_variant abnt2
     xkb_model abnt2
+}
+
+input "type:pointer" {
+    pointer_accel -0.5
 }
 
 ### Key bindings
