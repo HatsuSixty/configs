@@ -7,6 +7,11 @@ echo "Installing sway config..."
 # Find required commands for the sway setup
 #
 
+# Obvious ones
+
+find_command Xwayland
+find_command i3blocks
+
 # Commands for key bindings
 
 find_command dunst
