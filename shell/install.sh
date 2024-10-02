@@ -37,8 +37,10 @@ if [ ! -d "$ZSHSH_PATH" ]; then
     fi
 fi
 
-# Ensure eza is installed
+# Ensure needed commands for the shell aliases are
+# installed.
 find_command eza
+find_command nvim
 
 # Install shell config
 link_path "$(pwd)/config/.zshrc" "${HOME}/.zshrc"
