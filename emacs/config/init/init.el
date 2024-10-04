@@ -94,7 +94,8 @@
 (menu-bar-mode                    0)
 (tool-bar-mode                    0)
 (scroll-bar-mode                  0)
-(column-number-mode               1)
+(column-number-mode               0)
+(line-number-mode                 0)
 (show-paren-mode                  1)
 (global-display-line-numbers-mode 1)
 
