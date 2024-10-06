@@ -4,7 +4,7 @@ interval=30
 color=#FF0000
 
 [todo]
-full_text=todo: ∞
+full_text=Todo: ∞
 color=#00FF00
 
 [memory]
@@ -22,7 +22,7 @@ interval=5
 color=#00FF00
 
 [netstatus]
-command=sh ~/.config/scripts/network_available
+command=sh ~/.config/sway/scripts/network_available
 interval=5
 color=#FFFF00
 
