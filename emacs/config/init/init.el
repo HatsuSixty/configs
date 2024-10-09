@@ -100,7 +100,7 @@
 (global-display-line-numbers-mode 1)
 
 ;; Set theme
-(util/set-theme 'sonokai-shusia)
+(util/set-theme 'groover-darker)
 
 ;; Tabs and spaces
 (setq-default tab-width 4)
