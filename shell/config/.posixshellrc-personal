@@ -59,7 +59,19 @@ export TOR_DIR='/home/hatsu/.opt/tor-browser'
 
 ### ALIASES ###
 
-alias girlboss="sudo !!"
+girlboss() {
+    local last_history_line=""
+    if [ -n "$ZSH_VERSION" ]; then
+        last_history_line="$(history | tail -n -1)"
+    else
+        last_history_line="$(history | tail -n -2 | head -n -1)"
+    fi
+    local last_cmd=$(echo $last_history_line | awk '{$1=""; sub(/^ /, ""); print}')
+    echo "sudo $last_cmd" | tee /tmp/girlboss
+    source /tmp/girlboss
+    rm -f /tmp/girlboss
+}
+
 alias nano="echo \"ERROR: could not open nano: normie editor detected\""
 alias cls="clear"
 alias vim="nvim"
