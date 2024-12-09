@@ -107,9 +107,8 @@ if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ $(shuf -i 1-3 -n 1) = 3 ]; then
-    echo "DON'T CHANGE YOUR DESKTOP ENVIRONMENT AGAIN"
-fi
+# For stuff that doesn't belong in the repo
+[[ -f ~/.posixshellrc-custom ]] && . ~/.posixshellrc-custom
 
 PATH=$PATH:/home/hatsu/.opt/porth/
 PATH=$PATH:/home/hatsu/.opt/boomer/
