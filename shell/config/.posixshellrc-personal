@@ -2,7 +2,7 @@
 
 function addtopath()
 {
-    echo "PATH=\$PATH:$1" >> ~/.posixshellrc-personal
+    echo "export PATH=\$PATH:$1" >> ~/.posixshellrc-path
 }
 
 function changeBright()
@@ -107,23 +107,8 @@ if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Update path in a separate file
+[[ -f ~/.posixshellrc-path ]] && . ~/.posixshellrc-path
+
 # For stuff that doesn't belong in the repo
 [[ -f ~/.posixshellrc-custom ]] && . ~/.posixshellrc-custom
-
-PATH=$PATH:/home/hatsu/.opt/porth/
-PATH=$PATH:/home/hatsu/.opt/boomer/
-PATH=$PATH:/home/hatsu/.opt/ascii-image-converter/
-PATH=$PATH:/home/hatsu/.cargo/bin
-PATH=$PATH:/home/hatsu/.opt/luaserver/bin
-PATH=$PATH:/home/hatsu/.opt/VSCode-linux-x64/bin
-PATH=$PATH:/home/hatsu/.opt/mugshot-0.4.3/bin
-PATH=$PATH:/home/hatsu/.nimble/bin
-PATH=$PATH:/home/hatsu/.opt/node/bin
-PATH=$PATH:/media/hatsu/HomePartition/Documents/Programs/Linux/IntelliJ\ Idea/bin
-PATH=$PATH:/media/hatsu/HomePartition/Documents/Programs/Linux/Godot
-PATH=$PATH:/home/hatsu/.opt/platform-tools
-PATH=$PATH:/home/hatsu/go/bin/
-PATH=$PATH:/home/hatsu/.opt/zig
-PATH=$PATH:/home/hatsu/.opt/gf
-PATH=$PATH:/home/hatsu/.opt/tcc/bin
-PATH=$PATH:/home/hatsu/.opt/c3
