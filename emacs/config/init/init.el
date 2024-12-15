@@ -88,7 +88,10 @@
 ;
 
 ;; Set font
-(add-to-list 'default-frame-alist '(font . "Iosevka Nerd Font Mono 14"))
+(if (eq system-type 'windows-nt)
+    (add-to-list 'default-frame-alist '(font . "Consolas 14"))
+  (add-to-list 'default-frame-alist '(font . "Iosevka Nerd Font Mono 14")))
+
 
 ;; Set modes
 (menu-bar-mode                    0)
