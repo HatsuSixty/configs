@@ -40,16 +40,6 @@ find_command udiskie
 find_command dex
 
 #
-# Compile "scripts"
-#
-
-find_command cc
-find_command tmux
-find_command alacritty
-
-cc -o ./config/scripts/terminal ./config/scripts/terminal.c
-
-#
 # Install sway config
 #
 
