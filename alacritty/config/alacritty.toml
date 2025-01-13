@@ -1,3 +1,4 @@
+[general]
 import = ["/home/hatsu/.config/alacritty/themes/gruber-darker-theme.toml",
           "/home/hatsu/.config/alacritty/fonts/normal-fonts.toml"]
 
